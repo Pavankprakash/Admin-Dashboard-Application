@@ -1,16 +1,77 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Modern Admin Dashboard Architecture**
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+**Project Overview**
+This project is a fully responsive, professional Admin Dashboard developed using React JS and Tailwind CSS. It follows a modular architecture with dynamic data rendering, interactive charts, and a highly customizable user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Key Features**
+
+• **Dynamic Navigation System**
+Includes a sidebar with collapsible sub-menus, interactive toggle icons, and active state tracking to highlight the current page.
+
+• **Responsive Layout**
+Optimized for seamless performance across mobile, tablet, and desktop devices.
+
+• **Data Visualization**
+Integrated Recharts to display insights using interactive Bar Charts and Pie Charts.
+
+• **Theming Support**
+Supports Dark Mode and Light Mode using dynamic Tailwind CSS styling.
+
+• **Status & Activity Tracking**
+Includes a dynamic Status Grid with progress indicators and an Activity Feed showing real-time updates.
+
+• **Interactive Tables**
+Features a Recent Orders table with conditional styling based on status (Pending, Shipped, Delivered).
+
+
+
+**Tech Stack**
+
+• Framework: React JS (Vite)
+• Styling: Tailwind CSS, Bootstrap
+• Icons: Lucide React
+• Charts: Recharts
+• State Management: React Hooks (useState, useEffect)
+
+
+
+**Installation & Setup**
+
+Follow these steps to run the project locally:
+
+1. Clone the repository
+   git clone your-repository-link
+
+2. Install dependencies
+   npm install
+
+3. Start development server
+   npm run dev
+
+Note: Ensure Node.js is installed.
+
+
+
+**Component Architecture**
+
+The application uses a modular structure for maintainability:
+
+• Sidebar
+Handles navigation logic and collapse behavior
+
+• StatusGrid
+Displays key performance indicators using mapped data
+
+• ChartSection
+Manages rendering of analytics charts
+
+• TableSection
+Handles dynamic tables for orders and products
+
+---
+
