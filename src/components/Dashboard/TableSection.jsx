@@ -106,13 +106,13 @@ const TableSection = () => {
           <table className="w-full">
             <thead>
               <tr>
-                <th className="p-4 text-left text-sm">Order ID</th>
-                <th className="p-4 text-left text-sm">Customer</th>
-                <th className="p-4 text-left text-sm">Product</th>
-                <th className="p-4 text-left text-sm">Amount</th>
-                <th className="p-4 text-left text-sm">Status</th>
-                <th className="p-4 text-left text-sm">Date</th>
-                <th className="p-4"></th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Order ID</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Customer</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Product</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Amount</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Status</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400">Date</th>
+                <th className="p-4 text-left text-sm text-slate-500 dark:text-slate-400"></th>
               </tr>
             </thead>
 
@@ -120,10 +120,10 @@ const TableSection = () => {
               {recentOrders.map((order, index) => (
                 <tr key={index} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800/50">
 
-                  <td className="p-4">{order.id}</td>
-                  <td className="p-4">{order.customer}</td>
-                  <td className="p-4">{order.product}</td>
-                  <td className="p-4">{order.amount}</td>
+                  <td className="p-4 text-slate-700 dark:text-slate-300">{order.id}</td>
+                  <td className="p-4 text-slate-700 dark:text-slate-300">{order.customer}</td>
+                  <td className="p-4 text-slate-700 dark:text-slate-300">{order.product}</td>
+                  <td className="p-4 text-slate-700 dark:text-slate-300">{order.amount}</td>
 
                   <td className="p-4">
                     <span className={`px-2 py-1 rounded-full text-xs ${getStatusColor(order.status)}`}>
@@ -145,7 +145,7 @@ const TableSection = () => {
       </div>
 
       {/* Top Products */}
-      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-200/50 dark:border-slate-700/50 p-6">
+      <div className="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl rounded-2xl border border-slate-200/50 dark:border-slate-700/50 p-6">
         
         <div className="flex justify-between mb-4">
           <h3 className="text-lg font-bold text-slate-800 dark:text-white">
@@ -158,12 +158,12 @@ const TableSection = () => {
           <div key={index} className="flex justify-between p-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50">
 
             <div>
-              <h4 className="text-sm font-semibold">{product.name}</h4>
+              <h4 className="text-sm font-semibold text-slate-800 dark:text-white">{product.name}</h4>
               <p className="text-xs text-slate-500">{product.sales} sales</p>
             </div>
 
             <div className="text-right">
-              <p className="font-semibold">{product.revenue}</p>
+              <p className="font-semibold text-slate-800 dark:text-white">{product.revenue}</p>
 
               <div className="flex items-center gap-1">
                 {product.trend === "up" ? (

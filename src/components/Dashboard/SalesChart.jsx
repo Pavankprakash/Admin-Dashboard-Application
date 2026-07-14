@@ -13,7 +13,7 @@ const SalesChart = () => {
         <div className='bg-white dark:bg-slate-900 backdrop-blur-xl rounded-b-2xl p-6 border
          border-slate-200/50 dark:border-slate-700/50'>
             <div className='mb-6'>
-                <h3 className='text-lg- font-bold text-slate-800 dark:text-white'>
+                <h3 className='text-lg font-bold text-slate-800 dark:text-white'>
                     Sales by Cateogry
                 </h3>
                 <p className='text-sm text-slate-500 dark:text-slate-400'>
@@ -25,8 +25,8 @@ const SalesChart = () => {
                     <PieChart>
                         <Pie
                             data={data}
-                            ex='50%'
-                            ey='50%'
+                            cx='50%'
+                            cy='50%'
                             innerRadius={48}
                             outerRadius={88}
                             paddingAngle={5}
@@ -52,7 +52,7 @@ const SalesChart = () => {
                     return (
                         <div className='flex items-center justify-between' key={index}>
                             <div
-                                className='flex item-sce space-x-3'
+                                className='flex item-center space-x-3'
                             >
                                 <div
                                     className='w-3 h-3 rounded-full'
@@ -62,7 +62,7 @@ const SalesChart = () => {
                                     {item.name}
                                 </span>
                             </div>
-                            <div className='text-sm font-semibold text-slate-800 dark:text-while'>
+                            <div className='text-sm font-semibold text-slate-800 dark:text-white'>
                                 {item.value}%
                             </div>
                         </div>

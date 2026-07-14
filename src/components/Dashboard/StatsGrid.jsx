@@ -47,7 +47,7 @@ function StatsGrid() {
         return (
           <div
             key={index}
-            className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-2xl p-6 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 group"
+            className="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl rounded-2xl p-6 border border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 group"
           >
             <div className="flex items-start justify-between">
               <div className="flex-1">
@@ -77,7 +77,7 @@ function StatsGrid() {
               </div>
 
               <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
-                <Icon className="w-5 h-5" />
+                <Icon className="w-5 h-5 text-slate-700 dark:text-slate-300" />
               </div>
             </div>
 
