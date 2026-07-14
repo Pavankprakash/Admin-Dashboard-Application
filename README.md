@@ -1,7 +1,13 @@
 
 **Modern Admin Dashboard Architecture**
 
+**Live Demo
 
+ https://admin-dashboard-application-one.vercel.app
+
+**GitHub Repository
+
+ https://github.com/Pavankprakash/Admin-Dashboard-Application
 
 **Project Overview**
 This project is a fully responsive, professional Admin Dashboard developed using React JS and Tailwind CSS. It follows a modular architecture with dynamic data rendering, interactive charts, and a highly customizable user interface.
